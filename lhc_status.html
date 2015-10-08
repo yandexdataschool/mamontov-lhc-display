@@ -1,0 +1,38 @@
+<!-- Adapted from http://lhcb-public.web.cern.ch/lhcb-public/en/Collaboration/LHCbLHC.html -->
+<!-- by kazeevn on 08.10.15 -->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <title>LHC status</title>
+    <style type="text/css">
+      #controls { z-index: 1000; position: absolute; top: 0; left: 0;
+      background-color: #99FFFF; border: 2px solid #99CCFF; margin: 0; padding: 6px;
+      width: 100px; font-family:verdana;
+      }
+      #controls span { margin: 0 5px }
+      .slide {text-align: center;}
+      body {background-color:#000000}
+      h1 {text-align:center; color:blue; font-size: 4em}
+      p {font-size: 2em}
+      #page1 p {font-size: 2.5em; text-align:left;}
+    </style>
+    <script type="text/javascript" src="/jquery.min.js"></script>
+    <script type="text/javascript">
+      setInterval(function(){
+      $("#lhc1").attr("src", "https://vistar-capture.web.cern.ch/vistar-capture/lhc1.png?"+new Date().getTime());
+      $("#lhc3").attr("src", "https://vistar-capture.web.cern.ch/vistar-capture/lhc3.png?"+new Date().getTime());
+      },10000);
+    </script>
+  </head>
+  <style type="text/css">
+    body {
+    overflow:hidden;
+    }
+  </style>
+  <body>
+    <img id="lhc1" style="width:50%; float:left" src="https://vistar-capture.web.cern.ch/vistar-capture/lhc1.png"/>
+    <img id="lhc3" style="width:50%; float:left" src="https://vistar-capture.web.cern.ch/vistar-capture/lhc3.png"/> 
+  </body>
+</html>
