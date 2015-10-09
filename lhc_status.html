@@ -13,7 +13,9 @@
       }
       #controls span { margin: 0 5px }
       .slide {text-align: center;}
-      body {background-color:#000000}
+      body {background-color:#000000;}
+      .header {color:white; font-size: 100px; background-color:blue;
+      font-family:TextBook New; text-align: center;}
       h1 {text-align:center; color:blue; font-size: 4em}
       p {font-size: 2em}
       #page1 p {font-size: 2.5em; text-align:left;}
@@ -21,8 +23,10 @@
     <script type="text/javascript" src="/jquery.min.js"></script>
     <script type="text/javascript">
       setInterval(function(){
-      $("#lhc1").attr("src", "https://vistar-capture.web.cern.ch/vistar-capture/lhc1.png?"+new Date().getTime());
-      $("#lhc3").attr("src", "https://vistar-capture.web.cern.ch/vistar-capture/lhc3.png?"+new Date().getTime());
+      $("#lhc1").attr(
+        "src", "https://vistar-capture.web.cern.ch/vistar-capture/lhc1.png?"+new Date().getTime());
+      $("#lhc3").attr(
+        "src", "https://vistar-capture.web.cern.ch/vistar-capture/lhc3.png?"+new Date().getTime());
       },10000);
     </script>
   </head>
@@ -32,7 +36,24 @@
     }
   </style>
   <body>
-    <img id="lhc1" style="width:50%; float:left" src="https://vistar-capture.web.cern.ch/vistar-capture/lhc1.png"/>
-    <img id="lhc3" style="width:50%; float:left" src="https://vistar-capture.web.cern.ch/vistar-capture/lhc3.png"/> 
+    <div class="header">
+      <span>
+	The Large Hadron collider status
+      </span>
+      <span style="float:right; margin-right:70px; transform-style: preserve-3d;">
+	<a href="http://cern.ch">
+	  <img width="84px"
+	       style="transform: translateY(6%);
+		      position: relative; top: 50%;"
+	       src="LogoOutline.svg" alt="CERN logo">
+	</a>
+      </span>
+    </div>
+    <div>
+      <img id="lhc1" style="width:50%; float:left"
+	   src="https://vistar-capture.web.cern.ch/vistar-capture/lhc1.png"/>
+      <img id="lhc3" style="width:50%; float:left; margin-top: 31px;"
+	   src="https://vistar-capture.web.cern.ch/vistar-capture/lhc3.png"/>
+    </div>
   </body>
 </html>
