@@ -595,7 +595,7 @@ function addtoscene( ) {
     textcontext.fillStyle = params.logocolor;//logomaterial.color;
     textcontext.fillText("Event "+theevent.eventNumber, 0.0, 0.5*textheight);
     textcontext.fillText("Run "+theevent.runNumber, 0.0, 2.0*textheight);
-    textcontext.fillText(theevent.time, 0.0, 3.5*textheight);
+    //textcontext.fillText(theevent.time, 0.0, 3.5*textheight);
     texttexture = new THREE.Texture(textcanvas);
     texttexture.needsUpdate = true;
     textmaterial = new THREE.SpriteMaterial( { map: texttexture, useScreenCoordinates: false });
