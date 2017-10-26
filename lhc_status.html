@@ -33,10 +33,14 @@
   <style type="text/css">
     body {
     overflow:hidden;
+    height:100%;
+    }
+    html {
+    height:100%;
     }
   </style>
   <body>
-    <div class="header">
+    <div class="header" style="height:13%">
       <span>
 	The Large Hadron collider status
       </span>
@@ -49,21 +53,21 @@
 	</a>
       </span>
     </div>
-    <div style="height: 100%;">
-<span style="width:30%; float:left;">
-<div>
-      <img id="lhc1" style="width:100%;"
-	   src="https://vistar-capture.web.cern.ch/vistar-capture/lhc1.png"/>
-</div>
-<div>
-      <img id="lhc3" style="width:100%;" 
-       	   src="https://vistar-capture.web.cern.ch/vistar-capture/lhc3.png"/> 
-</div>
-</span>
-<span style="float:left; width:70%; height:100%;">
-      <iframe id="lhc3" style="width:100%; height:1000px;" frameBorder="0"
-	      src="event_display_trunk/index.html">
-</span>
+    <div style="height:87%;">
+      <span style="float:left; height:100%">
+	<div style="height:50%;">
+	  <img id="lhc1" style="height:100%;"
+	       src="https://vistar-capture.web.cern.ch/vistar-capture/lhc1.png"/>
+	</div>
+	<div style="height:50%;">
+	  <img id="lhc3" style="height:100%;" 
+       	       src="https://vistar-capture.web.cern.ch/vistar-capture/lhc3.png"/> 
+	</div>
+      </span>
+      <span style="display:block; overflow:hidden; height:100%">
+	<iframe id="lhc3" style="width:100%; height:100%;" frameBorder="0"
+		src="event_display_trunk/index.html">
+      </span>
     </div>
   </body>
 </html>
