@@ -5,7 +5,7 @@
 ```
 bash -c "cd ~/zomb-cern-status && python -m SimpleHTTPServer"
 ```
-and the kiok launch:
+and the kiosk launch:
 ```
 /home/zomb-cern-lhc-status/launch_with_restart.sh
 ```
